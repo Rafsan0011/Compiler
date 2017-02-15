@@ -1,0 +1,39 @@
+/*Prog 4
+  Mohammad Hossain(Rafsan)
+  mmh318
+  This is the header file for lexer class.
+*/
+
+
+
+
+
+
+#include <fstream>
+#include "token.h"
+
+#ifndef LEXER_H
+#define LEXER_H
+
+
+using namespace std;
+class Lexer{
+
+
+public:
+
+Lexer(istream& in);
+
+
+
+int lineLexer;
+
+int posLexer;
+
+istream& input;
+char nextChar();
+Token nextToken();  
+unsigned char ch;
+
+};
+#endif
